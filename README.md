@@ -1,36 +1,42 @@
 1. Function Definitions
 totalbill(int itemprice, int itemquantity):
-Multiplies the item price by quantity to compute the total cost for an item.
+Calculates the total cost for an item by multiplying the item price by the quantity.
 generateReport(int salesCount[], int totalSales, string reportType):
-Displays the number of times each menu item was sold.
-Shows total earnings.
-Takes a report type parameter ("Weekly" or "Monthly") to generate different reports.
+Displays how many times each menu item was sold.
+Shows the total earnings.
+Accepts a report type parameter ("Weekly" or "Monthly") to create different reports.
+
 2. struct customer Definition
-Defines a structure named customer with:
-name: Stores the customer’s name.
-phone: Stores the customer's phone number.
+Defines a structure called customer with:
+name: Holds the customer’s name.
+phone: Holds the customer's phone number.
+
 3. main() Function Execution
 Customer Handling
-The program asks for the total number of customers.
-Iterates through each customer:
-Collects customer name and phone number.
+The program prompts for the total number of customers.
+It iterates through each customer:
+Gathers the customer's name and phone number.
+
 Menu and Ordering Process
-Displays a menu with 7 items and their respective prices.
-Takes user input for item choice and quantity.
-Uses a switch statement to determine the price of the selected item.
-Calls totalbill() to compute the bill and updates the totalSales variable.
-Stores the number of times each item is sold in the salesCount array.
-Asks the customer if they want to order more items.
+Displays a menu featuring 7 items along with their prices.
+Takes user input for the chosen item and its quantity.
+Utilizes a switch statement to identify the price of the selected item.
+Calls totalbill() to calculate the bill and updates the totalSales variable.
+Records the number of times each item is sold in the salesCount array.
+Inquires if the customer wishes to order additional items.
+
 Bill Calculation and Report Generation
-After finishing the order, it displays the total bill.
+Once the order is complete, it shows the total bill.
 Asks if the user wants to generate a weekly or monthly sales report using generateReport().
-Displays the total earnings and item-wise sales count.
+Displays the total earnings and the sales count for each item.
+
 Handling Multiple Customers
-If more customers are present, the loop continues (enter 8 for more customers).
-If no more customers are there (enter 9), the program terminates.
+If there are more customers, the loop continues (enter 8 for more customers).
+If there are no more customers (enter 9), the program ends.
+
 4. Key Features
-Accepts multiple customers.
-Allows ordering multiple items per customer.
-Tracks total sales and item-wise sales count.
+Supports multiple customers.
+Allows multiple item orders per customer.
+Tracks total sales and item-wise sales counts.
 Generates weekly and monthly sales reports.
-Uses a loop to handle multiple customers efficiently.
+Efficiently manages multiple customers using a loop
